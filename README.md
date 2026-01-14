@@ -1,6 +1,6 @@
 # Local Chat Server
 
-A simple client-server messaging application that runs locally on 127.0.0.1.
+A simple client-server messaging application that runs locally on 0.0.0.0.
 
 ## Features
 
@@ -21,7 +21,7 @@ A simple client-server messaging application that runs locally on 127.0.0.1.
 python3 server.py
 ```
 
-The server will start on `127.0.0.1:5555` and wait for connections.
+The server will start on `0.0.0.0:5555` and wait for connections.
 
 ### 2. Connect Clients
 
@@ -57,7 +57,7 @@ Each client will be prompted to choose a nickname, then can start chatting.
 
 ## Default Configuration
 
-- **Host**: 127.0.0.1 (localhost)
+- **Host**: 0.0.0.0 (localhost)
 - **Port**: 5555
 - **Protocol**: TCP
 - **Message limit**: 500 characters

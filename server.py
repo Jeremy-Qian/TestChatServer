@@ -5,7 +5,7 @@ import json
 from datetime import datetime
 
 class MessageServer:
-    def __init__(self, host='127.0.0.1', port=5555):
+    def __init__(self, host='0.0.0.0', port=5555):
         self.host = host
         self.port = port
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

@@ -60,7 +60,7 @@ chat-server/
 **Modify the host in `server.py`**:
 ```python
 # Change this line:
-def __init__(self, host='127.0.0.1', port=5555):
+def __init__(self, host='0.0.0.0', port=5555):
 # To:
 def __init__(self, host='0.0.0.0', port=5555):
 ```
@@ -186,7 +186,7 @@ server.listen(PORT, () => {
 ## Code Modifications for Hosting
 
 ### For All Platforms (except local):
-1. **Change host from `127.0.0.1` to `0.0.0.0`**:
+1. **Change host from `0.0.0.0` to `0.0.0.0`**:
    ```python
    def __init__(self, host='0.0.0.0', port=5555):
    ```
@@ -201,7 +201,7 @@ server.listen(PORT, () => {
    ```python
    # In client.py, allow custom host:
    def __init__(self, host=None, port=5555):
-       self.host = host or '127.0.0.1'  # Default to local
+       self.host = host or '0.0.0.0'  # Default to local
    ```
 
 ---
