@@ -1,0 +1,2 @@
+# No external dependencies required for this chat server
+# Built with Python standard library only
